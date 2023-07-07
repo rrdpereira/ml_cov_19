@@ -46,7 +46,7 @@ After the training and the tests, we got the following results:
                 precision    recall  f1-score   support
 
           Covid       0.76      0.96      0.85        26
-Viral Pneumonia       0.57      0.60      0.59        20
+ ViralPneumonia       0.57      0.60      0.59        20
          Normal       0.83      0.50      0.62        20
 
        accuracy                           0.71        66
@@ -66,7 +66,7 @@ After the augmentation, the training and the tests, we got the following results
                  precision    recall  f1-score   support
 
           Covid       0.81      0.96      0.88        26
-Viral Pneumonia       0.52      0.55      0.54        20
+ ViralPneumonia       0.52      0.55      0.54        20
          Normal       0.71      0.50      0.59        20
 
        accuracy                           0.70        66
