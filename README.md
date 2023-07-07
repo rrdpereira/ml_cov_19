@@ -21,22 +21,22 @@ The dataset used throughout the experiment was provided by the University of Mon
    - Healthy patients: 20 images [Normal]
 
 ### Windows OS filepath
-In our case, we are using:
-C:\GitProjW\ml_cov_19\Covid19-dataset\train
-C:\GitProjW\ml_cov_19\Covid19-dataset\train\output
-C:\GitProjW\ml_cov_19\Covid19-dataset\test
+- In our case, we are using:
+   - C:\GitProjW\ml_cov_19\Covid19-dataset\train
+   - C:\GitProjW\ml_cov_19\Covid19-dataset\train\output
+   - C:\GitProjW\ml_cov_19\Covid19-dataset\test
 
-Wich are conveted on the Python code for:
-import sys, time, os, datetime, glob
-dir_train = os.path.join('c:\\','GitProjW','ml_cov_19','Covid19-dataset','train')
-dir_aug = os.path.join('c:\\','GitProjW','ml_cov_19','Covid19-dataset','train','output')
-dir_test = os.path.join('c:\\','GitProjW','ml_cov_19','Covid19-dataset','test')
+- Wich are conveted on the Python code for:
+   - import sys, time, os, datetime, glob
+   - dir_train = os.path.join('c:\\','GitProjW','ml_cov_19','Covid19-dataset','train')
+   - dir_aug = os.path.join('c:\\','GitProjW','ml_cov_19','Covid19-dataset','train','output')
+   - dir_test = os.path.join('c:\\','GitProjW','ml_cov_19','Covid19-dataset','test')
 
 ### Linux Ubuntu OS filepath
-The Python code '~'(home):
-dir_train = os.path.join('~','GitProjW','ml_cov_19','Covid19-dataset','train')
-dir_aug = os.path.join('~','GitProjW','ml_cov_19','Covid19-dataset','train','output')
-dir_test = os.path.join('~','GitProjW','ml_cov_19','Covid19-dataset','test')
+- The Python code '~'(home):
+   - dir_train = os.path.join('~','GitProjW','ml_cov_19','Covid19-dataset','train')
+   - dir_aug = os.path.join('~','GitProjW','ml_cov_19','Covid19-dataset','train','output')
+   - dir_test = os.path.join('~','GitProjW','ml_cov_19','Covid19-dataset','test')
 
 ### Data balancing
 The analyzed dataset does not have balance for all classes, only patients with pneumonia and normal are balanced, and those with COVID-19 have more examples in the training and test samples. As this disparity is positive for the most important class (the detection of COVID-19), then techniques for balancing classes was not implemented.
