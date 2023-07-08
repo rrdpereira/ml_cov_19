@@ -1,7 +1,7 @@
 # ml_cov_19
-Machine Learning project for COVID-19 dataset provided by University of Montreal [link](https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset)
+Machine Learning project for COVID-19 dataset provided by University of Montreal [[link]](https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset)
 
-## Machine Learning (ML) Project for CCO - 724 - Machine Learning (Aprendizado de Máquina) course of PPGCC UFSCAr [link](https://www.ppgcc.ufscar.br/pt-br/programa/estrutura-curricular/disciplinas-do-programa/cco-724-aprendizado-de-maquina)
+## Machine Learning (ML) Project for CCO - 724 - Machine Learning (Aprendizado de Máquina) course of PPGCC UFSCAr [[link]](https://www.ppgcc.ufscar.br/pt-br/programa/estrutura-curricular/disciplinas-do-programa/cco-724-aprendizado-de-maquina)
  * Students: Gustavo das Neves Ubeda and Robson Rogério Dutra Pereira
  * Professor: Prof. Dr. Diego Furtado Silva
  * Dataset: https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset
