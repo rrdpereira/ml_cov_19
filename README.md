@@ -26,8 +26,8 @@ The analyzed dataset does not have balance for all classes, only patients with p
 
 The following images are a sample of Normal, Viral Pneumonia and Covid respectively:
 <p align="center">
-  <img height=200px src="./docs/normal/066.jpeg" />
-  <img height=200px src="./docs/012.jpeg" />
+  <img height=200px src="./docs/noraml/normal/066.jpeg" />
+  <img height=200px src="./docs/viral_pneumonia/012.jpeg" />
   <img height=200px src="./docs/covid/COVID-00006.jpg" />  
 </p>
 
