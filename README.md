@@ -1,14 +1,15 @@
 # ml_cov_19
 Machine Learning project for COVID-19 dataset provided by University of Montreal [[link]](https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset)
 
-## Machine Learning (ML) Project for CCO - 724 - Machine Learning (Aprendizado de Máquina) course of PPGCC UFSCAr [[link]](https://www.ppgcc.ufscar.br/pt-br/programa/estrutura-curricular/disciplinas-do-programa/cco-724-aprendizado-de-maquina)
+## 01 - Intro
+Machine Learning (ML) Project for CCO - 724 - Machine Learning (Aprendizado de Máquina) course of PPGCC UFSCAr [[link]](https://www.ppgcc.ufscar.br/pt-br/programa/estrutura-curricular/disciplinas-do-programa/cco-724-aprendizado-de-maquina)
+
  * Students: Gustavo das Neves Ubeda and Robson Rogério Dutra Pereira
  * Professor: Prof. Dr. Diego Furtado Silva
- * Dataset: https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset
- * Video Presentation: https://loom.com/share/5b2fd25db9974fd59cf1967a5a2b6f6c
- * Video Presentation: https://youtu.be/3Eo-i8RRLeI
+ * Dataset: Kaggle Covid-19 image dataset [[link]](https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset) 
+ * Presentation Videos: Link [[1]](https://loom.com/share/5b2fd25db9974fd59cf1967a5a2b6f6c) and Link [[2]](https://youtu.be/3Eo-i8RRLeI) 
 
-## About the dataset
+## 02 - About the dataset
 The dataset used throughout the experiment was provided by the University of Montreal for the COVID-19 detection using only chest X-rays. The dataset was made available already separated into training and test subsets, containing the following classes and their respective amounts of images:
 * Training partition:
    * Patients with COVID-19: 111 images [Covid]
@@ -20,7 +21,18 @@ The dataset used throughout the experiment was provided by the University of Mon
    * Patients with Pneumonia: 20 images [Viral Pneumonia]
    * Healthy patients: 20 images [Normal]
 
-## Windows OS filepath
+### Data balancing
+The analyzed dataset does not have balance for all classes, only patients with pneumonia and normal are balanced, and those with COVID-19 have more examples in the training and test samples. As this disparity is positive for the most important class (the detection of COVID-19), then techniques for balancing classes was not implemented.
+
+The following images are a sample of Normal, Viral Pneumonia and Covid respectively:
+<p align="center">
+  <img height=200px src="./docs/normal/066.jpeg" />
+  <img height=200px src="./docs/012.jpeg" />
+  <img height=200px src="./docs/covid/COVID-00006.jpg" />  
+</p>
+
+## 03 - Filepaths
+### Windows OS filepath
 * In our case, we are using:
 ``` sh
 C:\GitProjW\ml_cov_19\Covid19-dataset\train
@@ -37,7 +49,7 @@ dir_aug = os.path.join('c:\\','GitProjW','ml_cov_19','Covid19-dataset','train','
 dir_test = os.path.join('c:\\','GitProjW','ml_cov_19','Covid19-dataset','test')
 ```
 
-## Linux Ubuntu OS filepath
+### Linux Ubuntu OS filepath
 * The Python code '~'(home):
 ```python
 import sys, time, os, datetime, glob
@@ -47,8 +59,7 @@ dir_aug = os.path.join('~','GitProjW','ml_cov_19','Covid19-dataset','train','out
 dir_test = os.path.join('~','GitProjW','ml_cov_19','Covid19-dataset','test')
 ```
 
-## Data balancing
-The analyzed dataset does not have balance for all classes, only patients with pneumonia and normal are balanced, and those with COVID-19 have more examples in the training and test samples. As this disparity is positive for the most important class (the detection of COVID-19), then techniques for balancing classes was not implemented.
+## 04 - Results of Standard Dataset
 
 After the training and the tests, we got the following results:
 ``` sh
@@ -70,7 +81,8 @@ Cross Validation accuracy scores: [0.80769231 0.8        0.96       0.96       0
 Cross Validation accuracy MEAN +/- STANDARD DEVIATION: 0.869 +/- 0.066
 ```
 
-## Augmentation
+## 05 - Results with Dataset Augmentation
+### Augmentation
 Since it is possible to obtain better predictive results for Machine Learning (ML) models trained from larger databases, as seen in the course, the augmentation process was done to the training set to validate data augmentation hypothesis.
 
 After the augmentation, the training and the tests, we got the following results:
@@ -94,7 +106,7 @@ Cross Validation accuracy scores: [0.92105263 0.88157895 0.89473684 0.81333333 0
 Cross Validation accuracy MEAN +/- STANDARD DEVIATION: 0.878 +/- 0.027
 ```
 
-## References
+## 06 - References
  * https://towardsdatascience.com/hog-histogram-of-oriented-gradients-67ecd887675f
  * https://stackoverflow.com/questions/58270129/convert-categorical-data-into-numerical-data-in-python
  * https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
